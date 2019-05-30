@@ -61,7 +61,8 @@ export class HeroesService {
     console.log("servicio heroes construido!") 
   }
 
-  getHeroes():any{
+  getHeroes(){
+    console.log(this.heroes);
     return this.heroes;
   }
 

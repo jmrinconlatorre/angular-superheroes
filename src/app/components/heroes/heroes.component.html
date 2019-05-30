@@ -1,11 +1,11 @@
 <h1>Heroes <small>Marvel and DC</small></h1>
 <div class="card-columns">
-  <div class="card">
-    <img src="assets/img/aquaman.png" class="card-img-top" alt="...">
+  <div class="card" *ngFor="let heroeCard of heroes">
+    <img src={{heroeCard.img}} class="card-img-top" alt='asdlñkfjasdlfjasdñlkfjas'>
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h5 class="card-title">{{heroeCard.nombre}}</h5>
+      <p class="card-text">{{heroeCard.bio}}</p>
+      <p class="card-text"><small class="text-muted">{{heroeCard.aparicion}}</small></p>
       <button type="button" class="btn btn-outline-primary btn-block">Ver mas...</button>
     </div>
   </div>
